@@ -1,0 +1,36 @@
+<mat-sidenav-container class="nav-container">
+    <mat-sidenav #sidenav mode="side" opened class="sidenav" [fixedInViewport]="options.value.fixed"
+        [fixedTopGap]="options.value.top" [fixedBottomGap]="options.value.bottom">
+        <mat-nav-list class="p-0">
+            <a class="nav-item" mat-list-item routerLinkActive="active" [routerLink]="'dashboard'">
+                <div class="full-width item-content">
+                    <mat-icon>dashboard</mat-icon>
+                </div>
+            </a>
+            <a class="nav-item full-width" mat-list-item routerLinkActive="active" [routerLink]="'products'">
+                <div class="full-width item-content">
+                    <mat-icon>fastfood</mat-icon>
+                </div>
+            </a>
+            <a class="nav-item" mat-list-item routerLinkActive="active" [routerLink]="'categories'">
+                <div class="full-width item-content">
+                    <mat-icon>category</mat-icon>
+                </div>
+            </a>
+            <!-- <a class="nav-item" mat-list-item routerLinkActive="active" [routerLink]="'products'">
+                <div class="full-width item-content">
+                    <mat-icon>card_giftcard</mat-icon>
+                </div>
+            </a>
+            <a class="nav-item" mat-list-item routerLinkActive="active" [routerLink]="'products'">
+                <div class="full-width item-content">
+                    <mat-icon>card_giftcard</mat-icon>
+                </div>
+            </a> -->
+        </mat-nav-list>
+
+    </mat-sidenav>
+    <mat-sidenav-content class="p-4" [formGroup]="options">
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

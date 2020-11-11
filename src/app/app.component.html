@@ -1,0 +1,19 @@
+<!-- <div class="row">
+    <div class="col-md-12"> -->
+<mat-toolbar  class="toolbar">
+    <span class="title">Store POS</span>
+    <span class="spacer"></span>
+    <button class="profile-button" *ngIf="isAuthenticated" mat-button [matMenuTriggerFor]="menu">
+        Noman Fareed
+        <mat-icon>account_circle</mat-icon>
+    </button>
+</mat-toolbar>
+<mat-menu #menu="matMenu">
+    <button mat-menu-item (click)="logout()">
+        <mat-icon>exit_to_app</mat-icon>
+        Logout
+    </button>
+</mat-menu>
+<!-- </div>
+</div> -->
+<router-outlet></router-outlet>

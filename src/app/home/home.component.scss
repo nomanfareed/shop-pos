@@ -1,0 +1,38 @@
+.nav-container {
+  position: absolute;
+  top: 65px;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+}
+
+.sidenav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  background: #616161;
+  border: none;
+}
+
+.nav-item {
+  color: #ffffff;
+  border-bottom: 1px solid #ff7042;
+  .item-content{
+    text-align: center !important;
+
+  }
+}
+.nav-item:hover{
+  background: #d34e23 !important;
+}
+.nav-item:not(:hover){
+
+}
+.mat-nav-list a.active {
+  background: #c63000;
+  border-left: 5px solid #ffffff;
+  // .item-content{
+  //   text-align: center;
+  // }
+}
